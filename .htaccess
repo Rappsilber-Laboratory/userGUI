@@ -9,6 +9,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 	Require all denied
 	Require ip 130.149
     Require ip 129.215
+    Require ip 192.41
 	Require ip ::1
 </Files>
 
