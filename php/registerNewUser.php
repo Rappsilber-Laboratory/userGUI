@@ -10,7 +10,7 @@ try {
     $config = json_decode (file_get_contents ("../json/config.json"), true);
 
     $captcha = validatePostVar ("g-recaptcha-response", '/.{1,}/', false, "recaptchaWidget");
-    $email = validatePostVar ("email", $config["emailRegex"], true);
+    $email = $_POST['email'];//validatePostVar ("email", $config["emailRegex"], true);
     $username = validatePostVar ("username", '/^[a-zA-Z0-9]{1}[a-zA-Z0-9-_.]{2,14}[a-zA-Z0-9]/');
     $pword = validatePostVar ("pass", '/.{6,}/');
 
