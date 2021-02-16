@@ -6,14 +6,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <link rel="stylesheet" href="../vendor/css/example.wink.css" />
-        <link rel="stylesheet" href="../vendor/css/common.css" />
-        <link rel="stylesheet" href="css/login.css" />
+        <link rel="stylesheet" href="vendor/css/example.wink.css" />
+        <link rel="stylesheet" href="vendor/css/common.css" />
+        <link rel="stylesheet" href="userGUI/css/login.css" />
 
-        <script src="../vendor/js/jquery-3.4.1.js"></script>
-        <script src="../vendor/js/hideShowPassword.js"></script>
-        <script src="../vendor/js/spin.js"></script>
-         <script src="./js/forms.js"></script>
+        <script src="vendor/js/jquery-3.4.1.js"></script>
+        <script src="vendor/js/hideShowPassword.js"></script>
+        <script src="vendor/js/spin.js"></script>
+         <script src="userGUI/js/forms.js"></script>
      </head>
 
      <body>

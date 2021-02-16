@@ -7,13 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <link rel="stylesheet" href="vendor/css/example.wink.css" />
-        <link rel="stylesheet" href="xi3/css/common.css" />
-        <link rel="stylesheet" href="userGUIcss/login.css" />
+        <link rel="stylesheet" href="../xi3/css/common.css" />
+        <link rel="stylesheet" href="css/login.css" />
 
         <script src="vendor/js/jquery-3.2.1.js"></script>
         <script src="vendor/js/hideShowPassword.js"></script>
         <script src="vendor/js/spin.js"></script>
-         <script src="userGUI/js/forms.js"></script>
+         <script src="./js/forms.js"></script>
      </head>
     
      <body>
