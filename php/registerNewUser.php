@@ -9,13 +9,13 @@ include ('../../vendor/php/utils.php');
 try {
     $config = json_decode (file_get_contents ("../json/config.json"), true);
 
-    $captcha = validatePostVar ("g-recaptcha-response", '/.{1,}/', false, "recaptchaWidget");
+//    $captcha = validatePostVar ("g-recaptcha-response", '/.{1,}/', false, "recaptchaWidget");
     $email = validatePostVar ("email", $config["emailRegex"], true);
     $username = validatePostVar ("username", '/^[a-zA-Z0-9]{1}[a-zA-Z0-9-_.]{2,14}[a-zA-Z0-9]/');
     $pword = validatePostVar ("pass", '/.{6,}/');
 
     // validate captcha
-    validateCaptcha ($captcha);
+//    validateCaptcha ($captcha);
 
     $dbconn = pg_connect($connectionString);
     try {
@@ -52,6 +52,7 @@ try {
 
         require_once    ('../../vendor/php/PHPMailer-master/src/PHPMailer.php');
         require_once    ('../../vendor/php/PHPMailer-master/src/SMTP.php');
+        require_once    ('../../vendor/php/PHPMailer-master/src/Exception.php');
 
         $url = $urlRoot."userGUI/GDPRacceptance.html?gdpr_token=".$gdpr_token;
         $mail = makePHPMailerObj ($mailInfo, $email, $username, getTextString("newUserEmailHeader"));

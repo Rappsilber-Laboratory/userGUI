@@ -36,7 +36,7 @@
 
                 <div class="control-group">
                     <label for="email">Email Address</label>
-                    <input type="email" value="" placeholder="email@address" id="email" name="email" pattern="" required/>
+                    <input type="email" value="" placeholder="email@address" id="email" name="email" pattern=".*" required/>
                     <span class="error" id="email-errorMsg"></span>
                     <span class="error2"></span>
                 </div>
@@ -49,8 +49,6 @@
                     <label for="show-password">Show password</label>
                 </div>
 
-                <div id="recaptchaWidget" data-sitekey="getFromConfig.json"></div>
-                <span class="error">&lt; Please check the captcha form</span>
                 <br/>
 
                 <input name="Submit" value="Create My Xi Account" type="submit" class="btn btn-1a"/>
@@ -72,7 +70,6 @@
                         CLMSUI.loginForms.msgs = msgs;
                         CLMSUI.loginForms.makeFooter();
                         CLMSUI.loginForms.makeHelpButton();
-                        CLMSUI.loginForms.finaliseRecaptcha (config.googleRecaptchaPublicKey);
                         var spinner = CLMSUI.loginForms.getSpinner();
 
                         var splitRegex = config.emailRegex.split("/");
@@ -109,7 +106,6 @@
                 //});
             </script>
 
-            <script src="https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
         </div>
 
     </body>
