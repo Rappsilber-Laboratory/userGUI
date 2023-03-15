@@ -11,8 +11,8 @@
         "resetPasswordEmailInfo": "An email has been sent to the associated address. Use the link in the email within 2 hours to reset your password.",
         "passwordResetCatchall": "An Error occurred when resetting a password.",
         "resetPasswordEmailHeader": "Xi Password Reset",
-        "resetPasswordEmailBody": "Use this link to reset your Xi account's password, within 2 hours of receiving this email<br><A href='$1'>$1</A>",
-        
+        "resetPasswordEmailBody": "User: $1 - you may use this link to reset your xiView account's password, within 2 hours of receiving this email<br><A href='$2'>$2</A>",
+
         "genDatabaseError": "Sorry, there has been a database error. Alert your Xi administrator.",
         "databaseConnectError": "An Error occurred when attempting to connect to the Xi database.<br>If this continues please contact your Xi Administrator.",
         "userDatabaseError": "An Error occurred when reading a user's details in the database.",
